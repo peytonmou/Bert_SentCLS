@@ -21,8 +21,15 @@ Results: Minor improvement only — SST-5 test accuracy increased to 53.4% (+1.5
 
 ## Repository Structue:
 - code/          base_bert, bert, classifier, tokenizer, optimizer, config, utils
-- data/          SST-5 and IMDB dataset splits
 - logs/          training & testing logs
 - output/        dev & test outputs
 - report.pdf     explaining model architecture and experiments
 - run.sh         environment setup + run script
+
+## Data accessible from HuggingFace
+- SST-5 (SetFit version)  5-class sentiment classification: 0: very negative, 1: negative, 2: neutral, 3: positive, 4: very positive  
+  from datasets import load_dataset  
+  sst5 = load_dataset("SetFit/sst5")
+- IMDB binary sentiment classification: positive / negative   
+  from datasets import load_dataset  
+  imdb = load_dataset("stanfordnlp/imdb")

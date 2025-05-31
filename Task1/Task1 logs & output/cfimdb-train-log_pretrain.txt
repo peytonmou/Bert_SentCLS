@@ -1,0 +1,27 @@
+args: {'train': 'data/cfimdb-train.txt', 'dev': 'data/cfimdb-dev.txt', 'test': 'data/cfimdb-test.txt', 'seed': 1234, 'epochs': 10, 'option': 'pretrain', 'use_gpu': True, 'dev_out': 'cfimdb-dev-output.txt', 'test_out': 'cfimdb-test-output.txt', 'filepath': 'cfimdb-model.pt', 'batch_size': 16, 'hidden_dropout_prob': 0.1, 'lr': 0.0001}
+load 1707 data from data/cfimdb-train.txt
+load 245 data from data/cfimdb-dev.txt
+save the model to cfimdb-model.pt
+epoch 0: train loss :: 0.748, train acc :: 0.535, dev acc :: 0.482
+save the model to cfimdb-model.pt
+epoch 1: train loss :: 0.714, train acc :: 0.606, dev acc :: 0.571
+save the model to cfimdb-model.pt
+epoch 2: train loss :: 0.683, train acc :: 0.640, dev acc :: 0.629
+save the model to cfimdb-model.pt
+epoch 3: train loss :: 0.666, train acc :: 0.677, dev acc :: 0.673
+save the model to cfimdb-model.pt
+epoch 4: train loss :: 0.638, train acc :: 0.704, dev acc :: 0.714
+save the model to cfimdb-model.pt
+epoch 5: train loss :: 0.613, train acc :: 0.729, dev acc :: 0.739
+save the model to cfimdb-model.pt
+epoch 6: train loss :: 0.600, train acc :: 0.742, dev acc :: 0.747
+save the model to cfimdb-model.pt
+epoch 7: train loss :: 0.589, train acc :: 0.755, dev acc :: 0.759
+save the model to cfimdb-model.pt
+epoch 8: train loss :: 0.574, train acc :: 0.778, dev acc :: 0.796
+epoch 9: train loss :: 0.565, train acc :: 0.775, dev acc :: 0.780
+load model from cfimdb-model.pt
+load 245 data from data/cfimdb-dev.txt
+load 488 data from data/cfimdb-test.txt
+dev acc :: 0.796
+test acc :: 0.504

@@ -1,0 +1,296 @@
+###POS
+[nltk_data] Downloading package wordnet to /home/moupe847/nltk_data...
+[nltk_data]   Package wordnet is already up-to-date!
+Starting training with prefix: sst
+[nltk_data] Downloading package wordnet to /home/moupe847/nltk_data...
+[nltk_data]   Package wordnet is already up-to-date!
+[nltk_data] Downloading package wordnet to /home/moupe847/nltk_data...
+[nltk_data]   Package wordnet is already up-to-date!
+Arguments: {'train': 'data/sst-train.txt', 'dev': 'data/sst-dev.txt', 'test': 'data/sst-test.txt', 'seed': 1234, 'epochs': 10, 'option': 'finetune', 
+'use_gpu': True, 'dev_out': 'sst-dev-output.txt', 'test_out': 'sst-test-output.txt', 'filepath': 'sst-model_task2.pt', 'batch_size': 64, 
+'hidden_dropout_prob': 0.3, 'lr': 1e-05, 'use_pos': True, 'use_dep': False, 'use_wn': False}
+Loaded 8544 examples from data/sst-train.txt
+Loaded 1101 examples from data/sst-dev.txt
+POS vocab size: 19
+DEP vocab size: 47
+Epoch 0: Train Loss: 1.613 | Train Acc: 0.301 | Dev Acc: 0.284
+Model saved to sst-model_task2.pt
+Epoch 1: Train Loss: 1.592 | Train Acc: 0.298 | Dev Acc: 0.290
+Model saved to sst-model_task2.pt
+Epoch 2: Train Loss: 1.581 | Train Acc: 0.307 | Dev Acc: 0.306
+Model saved to sst-model_task2.pt
+Epoch 3: Train Loss: 1.574 | Train Acc: 0.317 | Dev Acc: 0.312
+Model saved to sst-model_task2.pt
+Epoch 4: Train Loss: 1.571 | Train Acc: 0.321 | Dev Acc: 0.301
+Epoch 5: Train Loss: 1.565 | Train Acc: 0.324 | Dev Acc: 0.304
+Epoch 6: Train Loss: 1.560 | Train Acc: 0.330 | Dev Acc: 0.302
+Epoch 7: Train Loss: 1.552 | Train Acc: 0.305 | Dev Acc: 0.274
+Epoch 8: Train Loss: 1.542 | Train Acc: 0.302 | Dev Acc: 0.294
+Epoch 9: Train Loss: 1.545 | Train Acc: 0.339 | Dev Acc: 0.309
+Loaded 1101 examples from data/sst-dev.txt
+Loaded 2210 examples from data/sst-test.txt
+Dev Accuracy: 0.312 | Test Accuracy: 0.296
+Ending training with prefix: sst
+
+
+
+
+###DEP
+
+Arguments: {'train': 'data/sst-train.txt', 'dev': 'data/sst-dev.txt', 'test': 'data/sst-test.txt', 'seed': 1234, 'epochs': 10, 'option': 'finetune',
+ 'use_gpu': True, 'dev_out': 'sst-dev-output.txt', 'test_out': 'sst-test-output.txt', 'filepath': 'sst-model_task2.pt', 'batch_size': 16, 
+ 'hidden_dropout_prob': 0.3, 'lr': 1e-05, 'use_pos': False, 'use_dep': True, 'use_wn': False}
+Loaded 8544 examples from data/sst-train.txt
+Loaded 1101 examples from data/sst-dev.txt
+POS vocab size: 19
+DEP vocab size: 47
+Epoch 0: Train Loss: 1.288 | Train Acc: 0.573 | Dev Acc: 0.488
+Model saved to sst-model_task2.pt
+Epoch 1: Train Loss: 1.019 | Train Acc: 0.706 | Dev Acc: 0.509
+Model saved to sst-model_task2.pt
+Epoch 2: Train Loss: 0.841 | Train Acc: 0.784 | Dev Acc: 0.515
+Model saved to sst-model_task2.pt
+Epoch 3: Train Loss: 0.655 | Train Acc: 0.892 | Dev Acc: 0.501
+Epoch 4: Train Loss: 0.476 | Train Acc: 0.934 | Dev Acc: 0.485
+Epoch 5: Train Loss: 0.340 | Train Acc: 0.934 | Dev Acc: 0.507
+Epoch 6: Train Loss: 0.232 | Train Acc: 0.973 | Dev Acc: 0.498
+Epoch 7: Train Loss: 0.173 | Train Acc: 0.967 | Dev Acc: 0.478
+Epoch 8: Train Loss: 0.124 | Train Acc: 0.981 | Dev Acc: 0.486
+Epoch 9: Train Loss: 0.109 | Train Acc: 0.982 | Dev Acc: 0.496
+Loaded 1101 examples from data/sst-dev.txt
+Loaded 2210 examples from data/sst-test.txt
+Dev Accuracy: 0.515 | Test Accuracy: 0.534
+Ending training with prefix: sst
+
+
+
+###WN
+Arguments: {'train': 'data/sst-train.txt', 'dev': 'data/sst-dev.txt', 'test': 'data/sst-test.txt', 'seed': 1234, 'epochs': 10, 'option': 'finetune', 
+'use_gpu': True, 'dev_out': 'sst-dev-output.txt', 'test_out': 'sst-test-output.txt', 'filepath': 'sst-model_task2.pt', 'batch_size': 16, 
+'hidden_dropout_prob': 0.3, 'lr': 1e-05, 'use_pos': False, 'use_dep': False, 'use_wn': True}
+Loaded 8544 examples from data/sst-train.txt
+Loaded 1101 examples from data/sst-dev.txt
+POS vocab size: 19
+DEP vocab size: 47
+Epoch 0: Train Loss: 1.288 | Train Acc: 0.573 | Dev Acc: 0.488
+Model saved to sst-model_task2.pt
+Epoch 1: Train Loss: 1.019 | Train Acc: 0.706 | Dev Acc: 0.509
+Model saved to sst-model_task2.pt
+Epoch 2: Train Loss: 0.841 | Train Acc: 0.784 | Dev Acc: 0.515
+Model saved to sst-model_task2.pt
+Epoch 3: Train Loss: 0.655 | Train Acc: 0.892 | Dev Acc: 0.501
+Epoch 4: Train Loss: 0.476 | Train Acc: 0.934 | Dev Acc: 0.485
+Epoch 5: Train Loss: 0.340 | Train Acc: 0.934 | Dev Acc: 0.507
+Epoch 6: Train Loss: 0.232 | Train Acc: 0.973 | Dev Acc: 0.498
+Epoch 7: Train Loss: 0.173 | Train Acc: 0.967 | Dev Acc: 0.478
+Epoch 8: Train Loss: 0.124 | Train Acc: 0.981 | Dev Acc: 0.486
+Epoch 9: Train Loss: 0.109 | Train Acc: 0.982 | Dev Acc: 0.496
+Loaded 1101 examples from data/sst-dev.txt
+Loaded 2210 examples from data/sst-test.txt
+Dev Accuracy: 0.515 | Test Accuracy: 0.534
+Ending training with prefix: sst
+
+
+###POS+DEP+WN
+Arguments: {'train': 'data/sst-train.txt', 'dev': 'data/sst-dev.txt', 'test': 'data/sst-test.txt', 'seed': 1234, 'epochs': 15, 'option': 'finetune', 
+'use_gpu': True, 'dev_out': 'sst-dev-output.txt', 'test_out': 'sst-test-output.txt', 'filepath': 'sst-model_task2.pt', 'batch_size': 16, 
+'hidden_dropout_prob': 0.3, 'lr': 1e-05, 'use_pos': True, 'use_dep': True, 'use_wn': True}
+Loaded 8544 examples from data/sst-train.txt
+Loaded 1101 examples from data/sst-dev.txt
+POS vocab size: 19
+DEP vocab size: 47
+Epoch 0: Train Loss: 1.616 | Train Acc: 0.302 | Dev Acc: 0.282
+Model saved to sst-model_task2.pt
+Epoch 1: Train Loss: 1.589 | Train Acc: 0.298 | Dev Acc: 0.286
+Model saved to sst-model_task2.pt
+Epoch 2: Train Loss: 1.586 | Train Acc: 0.313 | Dev Acc: 0.304
+Model saved to sst-model_task2.pt
+Epoch 3: Train Loss: 1.576 | Train Acc: 0.308 | Dev Acc: 0.296
+Epoch 4: Train Loss: 1.569 | Train Acc: 0.306 | Dev Acc: 0.286
+Epoch 5: Train Loss: 1.565 | Train Acc: 0.325 | Dev Acc: 0.303
+Epoch 6: Train Loss: 1.560 | Train Acc: 0.322 | Dev Acc: 0.297
+Epoch 7: Train Loss: 1.553 | Train Acc: 0.310 | Dev Acc: 0.273
+Epoch 8: Train Loss: 1.547 | Train Acc: 0.297 | Dev Acc: 0.280
+Epoch 9: Train Loss: 1.535 | Train Acc: 0.340 | Dev Acc: 0.301
+Epoch 10: Train Loss: 1.531 | Train Acc: 0.343 | Dev Acc: 0.300
+Epoch 11: Train Loss: 1.521 | Train Acc: 0.332 | Dev Acc: 0.272
+Epoch 12: Train Loss: 1.512 | Train Acc: 0.353 | Dev Acc: 0.273
+Epoch 13: Train Loss: 1.507 | Train Acc: 0.359 | Dev Acc: 0.297
+Epoch 14: Train Loss: 1.502 | Train Acc: 0.377 | Dev Acc: 0.290
+Loaded 1101 examples from data/sst-dev.txt
+Loaded 2210 examples from data/sst-test.txt
+Dev Accuracy: 0.304 | Test Accuracy: 0.292
+Ending training with prefix: sst
+
+
+
+###MSE Loss
+Starting training with prefix: sst
+args: {'train': 'data/sst-train.txt', 'dev': 'data/sst-dev.txt', 'test': 'data/sst-test.txt', 'seed': 1234, 'epochs': 10,
+ 'option': 'finetune', 'use_gpu': True, 'dev_out': 'sst-dev-output.txt', 'test_out': 'sst-test-output.txt', 
+ 'filepath': 'sst-model_pretrain.pt', 'batch_size': 64, 'hidden_dropout_prob': 0.3, 'lr': 1e-05}
+load 8544 data from data/sst-train.txt
+load 1101 data from data/sst-dev.txt
+save the model to sst-model_pretrain.pt
+epoch 0: train loss :: 0.265, train acc :: 0.418, dev acc :: 0.394
+save the model to sst-model_pretrain.pt
+epoch 1: train loss :: 0.198, train acc :: 0.488, dev acc :: 0.457
+save the model to sst-model_pretrain.pt
+epoch 2: train loss :: 0.183, train acc :: 0.532, dev acc :: 0.479
+save the model to sst-model_pretrain.pt
+epoch 3: train loss :: 0.176, train acc :: 0.553, dev acc :: 0.480
+save the model to sst-model_pretrain.pt
+epoch 4: train loss :: 0.167, train acc :: 0.604, dev acc :: 0.498
+save the model to sst-model_pretrain.pt
+epoch 5: train loss :: 0.156, train acc :: 0.636, dev acc :: 0.500
+epoch 6: train loss :: 0.147, train acc :: 0.674, dev acc :: 0.492
+save the model to sst-model_pretrain.pt
+epoch 7: train loss :: 0.139, train acc :: 0.736, dev acc :: 0.507
+epoch 8: train loss :: 0.129, train acc :: 0.773, dev acc :: 0.492
+epoch 9: train loss :: 0.120, train acc :: 0.828, dev acc :: 0.502
+load model from sst-model_pretrain.pt
+load 1101 data from data/sst-dev.txt
+load 2210 data from data/sst-test.txt
+dev acc :: 0.507
+test acc :: 0.520
+Ending training with prefix: sst
+
+
+###Added CLS Layers + LR Scheduler
+Starting training with prefix: sst
+args: {'train': 'data/sst-train.txt', 'dev': 'data/sst-dev.txt', 'test': 'data/sst-test.txt', 'seed': 1234, 'epochs': 10, 
+'option': 'finetune', 'use_gpu': True, 'dev_out': 'sst-dev-output.txt', 'test_out': 'sst-test-output.txt', 
+'filepath': 'sst-model_pretrain.pt', 'batch_size': 8, 'hidden_dropout_prob': 0.45, 'lr': 1e-05, 'warmup_steps': 300, 
+'attention_probs_dropout_prob': 0.1}
+load 8544 data from data/sst-train.txt
+load 1101 data from data/sst-dev.txt
+save the model to sst-model_pretrain.pt
+epoch 0: train loss :: 1.404, train acc :: 0.548, dev acc :: 0.495
+save the model to sst-model_pretrain.pt
+epoch 1: train loss :: 1.130, train acc :: 0.662, dev acc :: 0.500
+save the model to sst-model_pretrain.pt
+epoch 2: train loss :: 0.943, train acc :: 0.746, dev acc :: 0.509
+save the model to sst-model_pretrain.pt
+epoch 3: train loss :: 0.777, train acc :: 0.834, dev acc :: 0.511
+epoch 4: train loss :: 0.629, train acc :: 0.877, dev acc :: 0.487
+epoch 5: train loss :: 0.493, train acc :: 0.913, dev acc :: 0.503
+epoch 6: train loss :: 0.405, train acc :: 0.918, dev acc :: 0.500
+epoch 7: train loss :: 0.369, train acc :: 0.920, dev acc :: 0.489
+epoch 8: train loss :: 0.332, train acc :: 0.911, dev acc :: 0.480
+epoch 9: train loss :: 0.319, train acc :: 0.955, dev acc :: 0.508
+load model from sst-model_pretrain.pt
+load 1101 data from data/sst-dev.txt
+load 2210 data from data/sst-test.txt
+dev acc :: 0.511
+test acc :: 0.532
+Ending training with prefix: sst
+
+
+
+
+Starting training with prefix: sst
+args: {'train': 'data/sst-train.txt', 'dev': 'data/sst-dev.txt', 'test': 'data/sst-test.txt', 'seed': 1234, 
+'epochs': 15, 'option': 'finetune', 'use_gpu': True, 'dev_out': 'sst-dev-output.txt', 'test_out': 'sst-test-output.txt',
+ 'filepath': 'sst-model_pretrain.pt', 'batch_size': 8, 'hidden_dropout_prob': 0.4, 'lr': 3e-05, 'warmup_steps': 600, 
+ 'attention_probs_dropout_prob': 0.2}
+load 8544 data from data/sst-train.txt
+load 1101 data from data/sst-dev.txt
+save the model to sst-model_pretrain.pt
+epoch 0: train loss :: 1.344, train acc :: 0.571, dev acc :: 0.486
+save the model to sst-model_pretrain.pt
+epoch 1: train loss :: 1.047, train acc :: 0.703, dev acc :: 0.491
+epoch 2: train loss :: 0.810, train acc :: 0.770, dev acc :: 0.488
+epoch 3: train loss :: 0.610, train acc :: 0.872, dev acc :: 0.490
+epoch 4: train loss :: 0.485, train acc :: 0.841, dev acc :: 0.489
+save the model to sst-model_pretrain.pt
+epoch 5: train loss :: 0.411, train acc :: 0.923, dev acc :: 0.502
+epoch 6: train loss :: 0.366, train acc :: 0.932, dev acc :: 0.502
+epoch 7: train loss :: 0.331, train acc :: 0.959, dev acc :: 0.485
+epoch 8: train loss :: 0.288, train acc :: 0.954, dev acc :: 0.500
+save the model to sst-model_pretrain.pt
+epoch 9: train loss :: 0.234, train acc :: 0.949, dev acc :: 0.506
+epoch 10: train loss :: 0.223, train acc :: 0.967, dev acc :: 0.495
+epoch 11: train loss :: 0.189, train acc :: 0.962, dev acc :: 0.492
+epoch 12: train loss :: 0.190, train acc :: 0.961, dev acc :: 0.480
+epoch 13: train loss :: 0.172, train acc :: 0.988, dev acc :: 0.500
+epoch 14: train loss :: 0.150, train acc :: 0.985, dev acc :: 0.484
+load model from sst-model_pretrain.pt
+load 1101 data from data/sst-dev.txt
+load 2210 data from data/sst-test.txt
+dev acc :: 0.506
+test acc :: 0.518
+Ending training with prefix: sst
+
+
+###Pretrain with Yelp-30% (from HuggingFace)
+uccessfully installed requests-2.32.3 tqdm-4.67.1
+Starting training with prefix: sst
+args: {'train': 'data/sst-train.txt', 'dev': 'data/sst-dev.txt', 'test': 'data/sst-test.txt', 'seed': 1234, 'epochs': 1, 'option': 'pretrain', 'use_gpu': True, 'dev_out': 'sst-dev-output.txt', 'test_out': 'sst-test-output.txt', 'filepath': 'sst-model_yelp.pt', 'batch_size': 8, 'hidden_dropout_prob': 0.25, 'lr': 1e-05}
+Sampling 30.0% (195000/650000) of yelp train dataset.
+Loaded 195000 examples from HF dataset
+Loaded 50000 examples from HF dataset
+save the model to sst-model_yelp.pt
+epoch 0: train loss :: 1.490, train acc :: 0.466, dev acc :: 0.261
+load model from sst-model_yelp.pt
+Loaded 1101 examples from data/sst-dev.txt
+Loaded 2210 examples from data/sst-test.txt
+dev acc :: 0.219
+test acc :: 0.274
+Ending training with prefix: sst
+
+
+
+###Pretrain with Yelp-10% (from HuggingFace)
+Successfully installed datasets-3.6.0 requests-2.32.3
+Starting training with prefix: sst
+args: {'train': 'data/sst-train.txt', 'dev': 'data/sst-dev.txt', 'test': 'data/sst-test.txt', 'seed': 1234, 'epochs': 3, 'option': 'pretrain', 'use_gpu': True, 'dev_out': 'sst-dev-output.txt', 'test_out': 'sst-test-output.txt', 'filepath': 'sst-model_yelp.pt', 'batch_size': 8, 'hidden_dropout_prob': 0.25, 'lr': 5e-05}
+Sampling 10.0% (65000/650000) of yelp train dataset.
+Loaded 65000 examples from HF dataset
+Loaded 50000 examples from HF dataset
+save the model to sst-model_yelp.pt
+epoch 0: train loss :: 1.405, train acc :: 0.488, dev acc :: 0.061
+epoch 1: train loss :: 1.226, train acc :: 0.510, dev acc :: 0.048
+epoch 2: train loss :: 1.178, train acc :: 0.518, dev acc :: 0.047
+load model from sst-model_yelp.pt
+Loaded 1101 examples from data/sst-dev.txt
+Loaded 2210 examples from data/sst-test.txt
+dev acc :: 0.206
+test acc :: 0.348
+Ending training with prefix: sst
+
+
+
+###Fintune following the previous pretrain saved model
+Successfully installed datasets-2.0.0 tqdm-4.67.1
+Starting training with prefix: sst
+args: {'train': 'data/sst-train.txt', 'dev': 'data/sst-dev.txt', 'test': 'data/sst-test.txt', 'seed': 1234, 'epochs': 10, 'option': 'finetune', 'use_gpu': True, 'dev_out': 'sst-dev-output.txt', 'test_out': 'sst-test-output.txt', 'filepath': 'sst-model.pt', 'batch_size': 8, 'hidden_dropout_prob': 0.3, 'lr': 1e-05}
+load 8544 data from data/sst-train.txt
+load 1101 data from data/sst-dev.txt
+save the model to sst-model.pt
+epoch 0: train loss :: 1.340, train acc :: 0.584, dev acc :: 0.488
+save the model to sst-model.pt
+epoch 1: train loss :: 1.008, train acc :: 0.663, dev acc :: 0.490
+save the model to sst-model.pt
+epoch 2: train loss :: 0.798, train acc :: 0.806, dev acc :: 0.493
+epoch 3: train loss :: 0.581, train acc :: 0.910, dev acc :: 0.486
+epoch 4: train loss :: 0.390, train acc :: 0.920, dev acc :: 0.467
+epoch 5: train loss :: 0.273, train acc :: 0.944, dev acc :: 0.473
+epoch 6: train loss :: 0.196, train acc :: 0.977, dev acc :: 0.489
+save the model to sst-model.pt
+epoch 7: train loss :: 0.138, train acc :: 0.985, dev acc :: 0.496
+epoch 8: train loss :: 0.123, train acc :: 0.987, dev acc :: 0.489
+save the model to sst-model.pt
+epoch 9: train loss :: 0.094, train acc :: 0.985, dev acc :: 0.505
+load model from sst-model.pt
+load 1101 data from data/sst-dev.txt
+load 2210 data from data/sst-test.txt
+dev acc :: 0.505
+test acc :: 0.515
+Ending training with prefix: sst
+
+
+
+
+
+
+

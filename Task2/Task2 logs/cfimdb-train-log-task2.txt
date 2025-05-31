@@ -1,0 +1,233 @@
+###POS
+Arguments: {'train': 'data/cfimdb-train.txt', 'dev': 'data/cfimdb-dev.txt', 'test': 'data/cfimdb-test.txt', 'seed': 1234, 'epochs': 10, 'option': 'finetune',
+ 'use_gpu': True, 'dev_out': 'cfimdb-dev-output.txt', 'test_out': 'cfimdb-test-output.txt', 'filepath': 'cfimdb-model_task2.pt', 'batch_size': 16,
+ 'hidden_dropout_prob': 0.3, 'lr': 1e-05, 'use_pos': True, 'use_dep': False, 'use_wn': False}
+Loaded 1707 examples from data/cfimdb-train.txt
+Loaded 245 examples from data/cfimdb-dev.txt
+POS vocab size: 19
+DEP vocab size: 47
+Epoch 0: Train Loss: 0.735 | Train Acc: 0.533 | Dev Acc: 0.551
+Model saved to cfimdb-model_task2.pt
+Epoch 1: Train Loss: 0.711 | Train Acc: 0.556 | Dev Acc: 0.547
+Epoch 2: Train Loss: 0.695 | Train Acc: 0.605 | Dev Acc: 0.629
+Model saved to cfimdb-model_task2.pt
+Epoch 3: Train Loss: 0.689 | Train Acc: 0.590 | Dev Acc: 0.588
+Epoch 4: Train Loss: 0.683 | Train Acc: 0.607 | Dev Acc: 0.616
+Epoch 5: Train Loss: 0.671 | Train Acc: 0.629 | Dev Acc: 0.620
+Epoch 6: Train Loss: 0.660 | Train Acc: 0.578 | Dev Acc: 0.588
+Epoch 7: Train Loss: 0.661 | Train Acc: 0.663 | Dev Acc: 0.661
+Model saved to cfimdb-model_task2.pt
+Epoch 8: Train Loss: 0.655 | Train Acc: 0.653 | Dev Acc: 0.620
+Epoch 9: Train Loss: 0.643 | Train Acc: 0.665 | Dev Acc: 0.637
+Loaded 245 examples from data/cfimdb-dev.txt
+Loaded 488 examples from data/cfimdb-test.txt
+Dev Accuracy: 0.661 | Test Accuracy: 0.619
+Ending training with prefix: cfimdb
+
+
+###DEP
+Arguments: {'train': 'data/cfimdb-train.txt', 'dev': 'data/cfimdb-dev.txt', 'test': 'data/cfimdb-test.txt', 'seed': 1234, 'epochs': 10, 'option': 'finetune', 
+'use_gpu': True, 'dev_out': 'cfimdb-dev-output.txt', 'test_out': 'cfimdb-test-output.txt', 'filepath': 'cfimdb-model_task2.pt', 'batch_size': 16, 
+'hidden_dropout_prob': 0.3, 'lr': 1e-05, 'use_pos': False, 'use_dep': True, 'use_wn': False}
+Loaded 1707 examples from data/cfimdb-train.txt
+Loaded 245 examples from data/cfimdb-dev.txt
+POS vocab size: 19
+DEP vocab size: 47
+Epoch 0: Train Loss: 0.416 | Train Acc: 0.981 | Dev Acc: 0.947
+Model saved to cfimdb-model_task2.pt
+Epoch 1: Train Loss: 0.093 | Train Acc: 0.992 | Dev Acc: 0.943
+Epoch 2: Train Loss: 0.033 | Train Acc: 0.997 | Dev Acc: 0.947
+Epoch 3: Train Loss: 0.019 | Train Acc: 0.998 | Dev Acc: 0.963
+Model saved to cfimdb-model_task2.pt
+Epoch 4: Train Loss: 0.018 | Train Acc: 0.998 | Dev Acc: 0.951
+Epoch 5: Train Loss: 0.020 | Train Acc: 0.998 | Dev Acc: 0.943
+Epoch 6: Train Loss: 0.009 | Train Acc: 0.999 | Dev Acc: 0.955
+Epoch 7: Train Loss: 0.007 | Train Acc: 0.999 | Dev Acc: 0.955
+Epoch 8: Train Loss: 0.006 | Train Acc: 0.999 | Dev Acc: 0.955
+Epoch 9: Train Loss: 0.004 | Train Acc: 1.000 | Dev Acc: 0.951
+Loaded 245 examples from data/cfimdb-dev.txt
+Loaded 488 examples from data/cfimdb-test.txt
+Dev Accuracy: 0.963 | Test Accuracy: 0.529
+Ending training with prefix: cfimdb
+
+
+###WN
+Arguments: {'train': 'data/cfimdb-train.txt', 'dev': 'data/cfimdb-dev.txt', 'test': 'data/cfimdb-test.txt', 'seed': 1234, 'epochs': 10, 'option': 'finetune', 
+'use_gpu': True, 'dev_out': 'cfimdb-dev-output.txt', 'test_out': 'cfimdb-test-output.txt', 'filepath': 'cfimdb-model_task2.pt', 'batch_size': 16, 
+'hidden_dropout_prob': 0.3, 'lr': 1e-05, 'use_pos': False, 'use_dep': False, 'use_wn': True}
+Loaded 1707 examples from data/cfimdb-train.txt
+Loaded 245 examples from data/cfimdb-dev.txt
+POS vocab size: 19
+DEP vocab size: 47
+Epoch 0: Train Loss: 0.416 | Train Acc: 0.981 | Dev Acc: 0.947
+Model saved to cfimdb-model_task2.pt
+Epoch 1: Train Loss: 0.093 | Train Acc: 0.992 | Dev Acc: 0.943
+Epoch 2: Train Loss: 0.033 | Train Acc: 0.997 | Dev Acc: 0.947
+Epoch 3: Train Loss: 0.019 | Train Acc: 0.998 | Dev Acc: 0.963
+Model saved to cfimdb-model_task2.pt
+Epoch 4: Train Loss: 0.018 | Train Acc: 0.998 | Dev Acc: 0.951
+Epoch 5: Train Loss: 0.020 | Train Acc: 0.998 | Dev Acc: 0.943
+Epoch 6: Train Loss: 0.009 | Train Acc: 0.999 | Dev Acc: 0.955
+Epoch 7: Train Loss: 0.007 | Train Acc: 0.999 | Dev Acc: 0.955
+Epoch 8: Train Loss: 0.006 | Train Acc: 0.999 | Dev Acc: 0.955
+Epoch 9: Train Loss: 0.004 | Train Acc: 1.000 | Dev Acc: 0.951
+Loaded 245 examples from data/cfimdb-dev.txt
+Loaded 488 examples from data/cfimdb-test.txt
+Dev Accuracy: 0.963 | Test Accuracy: 0.529
+Ending training with prefix: cfimdb
+
+
+
+###POS+DEP+WN
+[nltk_data] Downloading package wordnet to /home/moupe847/nltk_data...
+Starting training with prefix: cfimdb
+[nltk_data] Downloading package wordnet to /home/moupe847/nltk_data...
+[nltk_data]   Package wordnet is already up-to-date!
+[nltk_data] Downloading package wordnet to /home/moupe847/nltk_data...
+[nltk_data]   Package wordnet is already up-to-date!
+Arguments: {'train': 'data/cfimdb-train.txt', 'dev': 'data/cfimdb-dev.txt', 'test': 'data/cfimdb-test.txt', 'seed': 1234, 'epochs': 15, 'option': 'finetune', 'use_gpu': True, 'dev_out': 'cfimdb-dev-output.txt', 'test_out': 'cfimdb-test-output.txt', 'filepath': 'cfimdb-model_task2.pt', 'batch_size': 16, 'hidden_dropout_prob': 0.3, 'lr': 1e-05, 'use_pos': True, 'use_dep': True, 'use_wn': True}
+Loaded 1707 examples from data/cfimdb-train.txt
+Loaded 245 examples from data/cfimdb-dev.txt
+POS vocab size: 19
+DEP vocab size: 47
+Epoch 0: Train Loss: 0.735 | Train Acc: 0.533 | Dev Acc: 0.551
+Model saved to cfimdb-model_task2.pt
+Epoch 1: Train Loss: 0.711 | Train Acc: 0.556 | Dev Acc: 0.547
+Epoch 2: Train Loss: 0.695 | Train Acc: 0.605 | Dev Acc: 0.629
+Model saved to cfimdb-model_task2.pt
+Epoch 3: Train Loss: 0.689 | Train Acc: 0.590 | Dev Acc: 0.588
+Epoch 4: Train Loss: 0.683 | Train Acc: 0.607 | Dev Acc: 0.616
+Epoch 5: Train Loss: 0.671 | Train Acc: 0.629 | Dev Acc: 0.620
+Epoch 6: Train Loss: 0.660 | Train Acc: 0.578 | Dev Acc: 0.588
+Epoch 7: Train Loss: 0.661 | Train Acc: 0.663 | Dev Acc: 0.661
+Model saved to cfimdb-model_task2.pt
+Epoch 8: Train Loss: 0.655 | Train Acc: 0.653 | Dev Acc: 0.620
+Epoch 9: Train Loss: 0.643 | Train Acc: 0.665 | Dev Acc: 0.637
+Epoch 10: Train Loss: 0.644 | Train Acc: 0.652 | Dev Acc: 0.608
+Epoch 11: Train Loss: 0.647 | Train Acc: 0.656 | Dev Acc: 0.641
+Epoch 12: Train Loss: 0.631 | Train Acc: 0.679 | Dev Acc: 0.649
+Epoch 13: Train Loss: 0.633 | Train Acc: 0.687 | Dev Acc: 0.616
+Epoch 14: Train Loss: 0.639 | Train Acc: 0.699 | Dev Acc: 0.616
+Loaded 245 examples from data/cfimdb-dev.txt
+Loaded 488 examples from data/cfimdb-test.txt
+Dev Accuracy: 0.661 | Test Accuracy: 0.619
+Ending training with prefix: cfimdb
+
+
+###MSE Loss
+Starting training with prefix: cfimdb
+args: {'train': 'data/cfimdb-train.txt', 'dev': 'data/cfimdb-dev.txt', 'test': 'data/cfimdb-test.txt', 'seed': 1234, 'epochs': 30, 
+'option': 'finetune', 'use_gpu': True, 'dev_out': 'cfimdb-dev-output.txt', 'test_out': 'cfimdb-test-output.txt', 'filepath': 'cfimdb-model_pretrain.pt', 
+'batch_size': 16, 'hidden_dropout_prob': 0.3, 'lr': 1e-05}
+load 1707 data from data/cfimdb-train.txt
+load 245 data from data/cfimdb-dev.txt
+save the model to cfimdb-model_pretrain.pt
+epoch 0: train loss :: 0.318, train acc :: 0.930, dev acc :: 0.894
+save the model to cfimdb-model_pretrain.pt
+epoch 1: train loss :: 0.098, train acc :: 0.976, dev acc :: 0.939
+save the model to cfimdb-model_pretrain.pt
+epoch 2: train loss :: 0.059, train acc :: 0.991, dev acc :: 0.951
+save the model to cfimdb-model_pretrain.pt
+epoch 3: train loss :: 0.042, train acc :: 0.995, dev acc :: 0.955
+epoch 4: train loss :: 0.031, train acc :: 0.996, dev acc :: 0.955
+epoch 5: train loss :: 0.022, train acc :: 0.997, dev acc :: 0.951
+epoch 6: train loss :: 0.021, train acc :: 0.998, dev acc :: 0.951
+epoch 7: train loss :: 0.016, train acc :: 0.999, dev acc :: 0.955
+epoch 8: train loss :: 0.014, train acc :: 0.999, dev acc :: 0.955
+epoch 9: train loss :: 0.012, train acc :: 0.999, dev acc :: 0.951
+epoch 10: train loss :: 0.011, train acc :: 0.999, dev acc :: 0.955
+epoch 11: train loss :: 0.010, train acc :: 0.999, dev acc :: 0.955
+epoch 12: train loss :: 0.010, train acc :: 0.999, dev acc :: 0.955
+epoch 13: train loss :: 0.009, train acc :: 0.999, dev acc :: 0.955
+epoch 14: train loss :: 0.008, train acc :: 0.999, dev acc :: 0.955
+epoch 15: train loss :: 0.008, train acc :: 0.999, dev acc :: 0.951
+epoch 16: train loss :: 0.008, train acc :: 0.999, dev acc :: 0.955
+epoch 17: train loss :: 0.007, train acc :: 0.999, dev acc :: 0.955
+epoch 18: train loss :: 0.007, train acc :: 0.999, dev acc :: 0.955
+epoch 19: train loss :: 0.006, train acc :: 0.999, dev acc :: 0.955
+epoch 20: train loss :: 0.006, train acc :: 0.999, dev acc :: 0.955
+epoch 21: train loss :: 0.006, train acc :: 0.999, dev acc :: 0.955
+epoch 22: train loss :: 0.006, train acc :: 0.999, dev acc :: 0.951
+epoch 23: train loss :: 0.005, train acc :: 0.999, dev acc :: 0.955
+save the model to cfimdb-model_pretrain.pt
+epoch 24: train loss :: 0.005, train acc :: 0.999, dev acc :: 0.959
+epoch 25: train loss :: 0.005, train acc :: 0.999, dev acc :: 0.951
+epoch 26: train loss :: 0.005, train acc :: 0.999, dev acc :: 0.955
+epoch 27: train loss :: 0.005, train acc :: 0.999, dev acc :: 0.959
+epoch 28: train loss :: 0.004, train acc :: 0.999, dev acc :: 0.959
+epoch 29: train loss :: 0.004, train acc :: 0.999, dev acc :: 0.959
+load model from cfimdb-model_pretrain.pt
+load 245 data from data/cfimdb-dev.txt
+load 488 data from data/cfimdb-test.txt
+dev acc :: 0.959
+test acc :: 0.516
+Ending training with prefix: cfimdb
+
+
+###Added CLS Layers + LR Scheduler 
+Starting training with prefix: cfimdb
+args: {'train': 'data/cfimdb-train.txt', 'dev': 'data/cfimdb-dev.txt', 'test': 'data/cfimdb-test.txt', 'seed': 1234, 'epochs': 15, 'option': 'finetune', 'use_gpu': True, 
+'dev_out': 'cfimdb-dev-output.txt', 'test_out': 'cfimdb-test-output.txt', 'filepath': 'cfimdb-model_pretrain.pt', 'batch_size': 8, 'hidden_dropout_prob': 0.45, 
+'lr': 1e-05, 'warmup_steps': 300, 'attention_probs_dropout_prob': 0.2}
+load 1707 data from data/cfimdb-train.txt
+load 245 data from data/cfimdb-dev.txt
+save the model to cfimdb-model_pretrain.pt
+epoch 0: train loss :: 0.498, train acc :: 0.967, dev acc :: 0.943
+epoch 1: train loss :: 0.111, train acc :: 0.988, dev acc :: 0.943
+save the model to cfimdb-model_pretrain.pt
+epoch 2: train loss :: 0.059, train acc :: 0.995, dev acc :: 0.951
+epoch 3: train loss :: 0.035, train acc :: 0.995, dev acc :: 0.951
+epoch 4: train loss :: 0.041, train acc :: 0.996, dev acc :: 0.947
+epoch 5: train loss :: 0.029, train acc :: 0.990, dev acc :: 0.927
+epoch 6: train loss :: 0.032, train acc :: 0.996, dev acc :: 0.951
+save the model to cfimdb-model_pretrain.pt
+epoch 7: train loss :: 0.023, train acc :: 0.996, dev acc :: 0.955
+save the model to cfimdb-model_pretrain.pt
+epoch 8: train loss :: 0.023, train acc :: 0.997, dev acc :: 0.959
+epoch 9: train loss :: 0.021, train acc :: 0.998, dev acc :: 0.959
+epoch 10: train loss :: 0.014, train acc :: 0.998, dev acc :: 0.959
+save the model to cfimdb-model_pretrain.pt
+epoch 11: train loss :: 0.021, train acc :: 0.999, dev acc :: 0.963
+epoch 12: train loss :: 0.011, train acc :: 0.999, dev acc :: 0.963
+epoch 13: train loss :: 0.009, train acc :: 0.999, dev acc :: 0.963
+epoch 14: train loss :: 0.010, train acc :: 0.999, dev acc :: 0.959
+load model from cfimdb-model_pretrain.pt
+load 245 data from data/cfimdb-dev.txt
+load 488 data from data/cfimdb-test.txt
+dev acc :: 0.963
+test acc :: 0.512
+Ending training with prefix: cfimdb
+
+
+
+Starting training with prefix: cfimdb
+args: {'train': 'data/cfimdb-train.txt', 'dev': 'data/cfimdb-dev.txt', 'test': 'data/cfimdb-test.txt', 'seed': 1234, 'epochs': 15, 'option': 'finetune', 'use_gpu': True, 'dev_out': 'cfimdb-dev-output.txt', 'test_out': 'cfimdb-test-output.txt', 'filepath': 'cfimdb-model_pretrain.pt', 'batch_size': 8, 'hidden_dropout_prob': 0.4, 'lr': 1e-05, 'warmup_steps': 300, 'attention_probs_dropout_prob': 0.2}
+load 1707 data from data/cfimdb-train.txt
+load 245 data from data/cfimdb-dev.txt
+save the model to cfimdb-model_pretrain.pt
+epoch 0: train loss :: 0.492, train acc :: 0.974, dev acc :: 0.943
+epoch 1: train loss :: 0.112, train acc :: 0.988, dev acc :: 0.943
+save the model to cfimdb-model_pretrain.pt
+epoch 2: train loss :: 0.057, train acc :: 0.995, dev acc :: 0.951
+epoch 3: train loss :: 0.056, train acc :: 0.987, dev acc :: 0.931
+epoch 4: train loss :: 0.058, train acc :: 0.995, dev acc :: 0.951
+epoch 5: train loss :: 0.038, train acc :: 0.995, dev acc :: 0.951
+save the model to cfimdb-model_pretrain.pt
+epoch 6: train loss :: 0.026, train acc :: 0.996, dev acc :: 0.963
+epoch 7: train loss :: 0.027, train acc :: 0.996, dev acc :: 0.963
+epoch 8: train loss :: 0.020, train acc :: 0.997, dev acc :: 0.963
+save the model to cfimdb-model_pretrain.pt
+epoch 9: train loss :: 0.023, train acc :: 0.998, dev acc :: 0.967
+epoch 10: train loss :: 0.018, train acc :: 0.998, dev acc :: 0.967
+epoch 11: train loss :: 0.027, train acc :: 0.998, dev acc :: 0.943
+epoch 12: train loss :: 0.014, train acc :: 0.998, dev acc :: 0.955
+epoch 13: train loss :: 0.017, train acc :: 0.998, dev acc :: 0.955
+epoch 14: train loss :: 0.037, train acc :: 0.999, dev acc :: 0.947
+load model from cfimdb-model_pretrain.pt
+load 245 data from data/cfimdb-dev.txt
+load 488 data from data/cfimdb-test.txt
+dev acc :: 0.967
+test acc :: 0.506
+Ending training with prefix: cfimdb
+
+
